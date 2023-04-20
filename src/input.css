@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar {
+    @apply flex flex-col w-72 bg-slate-800 text-slate-500 transition-all duration-300 overflow-auto z-50
+}
+
+.sidebar.small {
+    @apply w-20
+}
+
+.sidebar.small .small {
+    @apply flex
+}
+.sidebar.small .large {
+    @apply hidden
+}
+
+.sidebar .title {
+    @apply text-2xl font-semibold text-white
+}
+
+.sidebar span {
+    @apply whitespace-nowrap
+}
+
+.sidebar .menu {
+    @apply flex flex-col overflow-auto
+}
+
+.sidebar .menu::-webkit-scrollbar {
+    display: none;
+}
+
+
+.sidebar .menu > span {
+    @apply px-6 py-2 font-semibold text-slate-400
+}
+
+.sidebar .menu .link {
+    @apply flex flex-row items-center gap-4 px-6 py-3 hover:bg-violet-600 hover:text-white
+}
+
+.sidebar.small .menu span {
+    @apply invisible
+}
+
+.sidebar.small .menu .icon {
+    @apply min-w-full
+}
+
+.card {
+    @apply shadow-lg shadow-slate-200 rounded-sm bg-white overflow-hidden flex flex-col
+}

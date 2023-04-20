@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex w-full h-screen overflow-hidden bg-slate-100 text-slate-600">
+        <!-- sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="flex flex-col px-6 py-4 border-b border-b-slate-700">
+                <div class="flex flex-col large">
+                    <span class="title">POSKU</span>
+                    <span class="subtitle">Point of Sales ku</span>
+                </div>
+                <div class="flex flex-col hidden w-full small">
+                    <span class="text-center title">PS</span>
+                    <span class="w-full text-center">&bull;</span>
+                </div>
+            </div>
+            <div class="flex flex-col px-6 py-4 border-b border-b-slate-700">
+                <span class="text-sm large">20 April 2023, 11:17 AM</span>
+                <span class="items-center justify-center hidden w-full text-center small">&bull;</span>
+            </div>
+            <div id="menu-container" class="menu">
+                <span>Kasir</span>
+                <ul class="flex flex-col gap-2">
+                    <li>
+                        <a href="" class="link">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z"></path>
+                                <path d="M7 20h10"></path>
+                                <path d="M9 16v4"></path>
+                                <path d="M15 16v4"></path>
+                             </svg>
+                            <span>Trnsaksi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- contents -->
+        <div class="flex flex-col flex-1 w-full min-h-screen overflow-auto">
+            <!-- navbar -->
+            <div class="sticky top-0 flex flex-row items-center justify-between gap-4 px-4 py-2 bg-white shadow-lg shadow-black/5">
+                <div class="flex flex-row items-center gap-4">
+                    <button id="menu" class="p-2 rounded-full hover:bg-slate-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 8l16 0"></path>
+                            <path d="M4 16l16 0"></path>
+                         </svg>
+                    </button>
+                    <span class="font-semibold">PT. Wahyu Hidayat Sejahtera</span>
+                </div>
+                <div class="flex flex-row items-center gap-4 px-4 py-2 transition duration-200 rounded-md hover:bg-slate-100">
+                    <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                    <div class="flex flex-col">
+                        <span>Wahyu Hidayat</span>
+                        <span class="text-sm">Kasir</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-6 px-4 py-4">
+                <div class="card">
+                    <div class="px-6 py-4 text-white bg-violet-500">
+                        <span class="font-semibold">Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="flex flex-col px-6 py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa, ab corrupti natus explicabo quam beatae eos perspiciatis nostrum. Eligendi maiores hic aut totam nam doloribus veritatis recusandae perspiciatis blanditiis!
+                        A saepe ex voluptas ipsum deleniti similique amet neque, ea natus nobis maxime inventore atque architecto! Debitis adipisci est at ratione facere? Placeat eaque sunt magnam autem dicta ratione aliquam!
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="px-6 py-4 text-white bg-violet-500">
+                        <span class="font-semibold">Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="flex flex-col px-6 py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa, ab corrupti natus explicabo quam beatae eos perspiciatis nostrum. Eligendi maiores hic aut totam nam doloribus veritatis recusandae perspiciatis blanditiis!
+                        A saepe ex voluptas ipsum deleniti similique amet neque, ea natus nobis maxime inventore atque architecto! Debitis adipisci est at ratione facere? Placeat eaque sunt magnam autem dicta ratione aliquam!
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="px-6 py-4 text-white bg-violet-500">
+                        <span class="font-semibold">Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="flex flex-col px-6 py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa, ab corrupti natus explicabo quam beatae eos perspiciatis nostrum. Eligendi maiores hic aut totam nam doloribus veritatis recusandae perspiciatis blanditiis!
+                        A saepe ex voluptas ipsum deleniti similique amet neque, ea natus nobis maxime inventore atque architecto! Debitis adipisci est at ratione facere? Placeat eaque sunt magnam autem dicta ratione aliquam!
+                    </div>
+                </div>
+                <div class="col-span-2 card">
+                    <div class="px-6 py-4 text-white bg-violet-500">
+                        <span class="font-semibold">Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="flex flex-col px-6 py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa, ab corrupti natus explicabo quam beatae eos perspiciatis nostrum. Eligendi maiores hic aut totam nam doloribus veritatis recusandae perspiciatis blanditiis!
+                        A saepe ex voluptas ipsum deleniti similique amet neque, ea natus nobis maxime inventore atque architecto! Debitis adipisci est at ratione facere? Placeat eaque sunt magnam autem dicta ratione aliquam!
+                    </div>
+                </div>
+                <div class=" card">
+                    <div class="px-6 py-4 text-white bg-violet-500">
+                        <span class="font-semibold">Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="flex flex-col px-6 py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa, ab corrupti natus explicabo quam beatae eos perspiciatis nostrum. Eligendi maiores hic aut totam nam doloribus veritatis recusandae perspiciatis blanditiis!
+                        A saepe ex voluptas ipsum deleniti similique amet neque, ea natus nobis maxime inventore atque architecto! Debitis adipisci est at ratione facere? Placeat eaque sunt magnam autem dicta ratione aliquam!
+                    </div>
+                </div>
+                <div class=" card">
+                    <div class="px-6 py-4 text-white bg-violet-500">
+                        <span class="font-semibold">Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="flex flex-col px-6 py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa, ab corrupti natus explicabo quam beatae eos perspiciatis nostrum. Eligendi maiores hic aut totam nam doloribus veritatis recusandae perspiciatis blanditiis!
+                        A saepe ex voluptas ipsum deleniti similique amet neque, ea natus nobis maxime inventore atque architecto! Debitis adipisci est at ratione facere? Placeat eaque sunt magnam autem dicta ratione aliquam!
+                    </div>
+                </div>
+                <div class=" card">
+                    <div class="px-6 py-4 text-white bg-violet-500">
+                        <span class="font-semibold">Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="flex flex-col px-6 py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa, ab corrupti natus explicabo quam beatae eos perspiciatis nostrum. Eligendi maiores hic aut totam nam doloribus veritatis recusandae perspiciatis blanditiis!
+                        A saepe ex voluptas ipsum deleniti similique amet neque, ea natus nobis maxime inventore atque architecto! Debitis adipisci est at ratione facere? Placeat eaque sunt magnam autem dicta ratione aliquam!
+                    </div>
+                </div>
+                <div class=" card">
+                    <div class="px-6 py-4 text-white bg-violet-500">
+                        <span class="font-semibold">Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="flex flex-col px-6 py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa, ab corrupti natus explicabo quam beatae eos perspiciatis nostrum. Eligendi maiores hic aut totam nam doloribus veritatis recusandae perspiciatis blanditiis!
+                        A saepe ex voluptas ipsum deleniti similique amet neque, ea natus nobis maxime inventore atque architecto! Debitis adipisci est at ratione facere? Placeat eaque sunt magnam autem dicta ratione aliquam!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="menu.js"></script>
+    <script>
+        let menu = document.getElementById('menu');
+        let sidebar = document.getElementById('sidebar');
+        menu.addEventListener('click', () => {
+            sidebar.classList.toggle('small');
+        })
+
+        let menuContainer = document.getElementById('menu-container');
+        let menuContent = '';
+        for (const menu of menus) {
+            menuContent += `<span>${menu.title}</span>
+                <ul class="flex flex-col gap-2 pb-4 border-b border-slate-700">`;
+            for (const value of menu.menu) {
+                menuContent += `<li>
+                        <a href="" class="link">
+                            ${value.icon}
+                            <span>${value.title}</span>
+                        </a>
+                    </li>`;
+            }
+            menuContent += `</ul>`;
+        }
+        menuContainer.innerHTML = menuContent;
+    </script>
+</body>
+</html>
